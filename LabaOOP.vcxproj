@@ -21,9 +21,11 @@
   <ItemGroup>
     <ClCompile Include="AntiplagiarismResults.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PracticeResults.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AntiplagiarismResults.h" />
+    <ClInclude Include="PracticeResults.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

@@ -21,9 +21,15 @@
     <ClCompile Include="AntiplagiarismResults.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="PracticeResults.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AntiplagiarismResults.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="PracticeResults.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
