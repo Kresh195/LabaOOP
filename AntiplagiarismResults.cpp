@@ -1,8 +1,7 @@
 #include "AntiplagiarismResults.h"
 
-
 AntiplagiarismResults::AntiplagiarismResults(const char* name, const char* title, WorkType workType, int pageCount) {
-    if (strlen(name) == 0 || name == nullptr) //сделана nullptr проверка  
+    if (strlen(name) == 0 || name == nullptr) 
         throw std::invalid_argument("Имя студента не задано.");
     if (strlen(title) == 0 || title == nullptr)
         throw std::invalid_argument("Название работы не задано.");
@@ -22,7 +21,7 @@ AntiplagiarismResults::AntiplagiarismResults(const char* name, const char* title
 
 AntiplagiarismResults::AntiplagiarismResults(const char* name, const char* title) {
     if (strlen(name) == 0 || name == nullptr)
-        throw std::invalid_argument("Имя студента не задано."); // сделана nullptr проверка
+        throw std::invalid_argument("Имя студента не задано.");
     if (strlen(title) == 0 || title == nullptr)
         throw std::invalid_argument("Название работы не задано.");
     char* nameBuffer = new char[strlen(name) + 1];
@@ -102,7 +101,7 @@ bool AntiplagiarismResults::CheckVolumeCorrectness() const {
     return false;
 }
 
-void AntiplagiarismResults::getOriginalityResult() { //не делать const
+void AntiplagiarismResults::getOriginalityResult() {
     double originalityRate = 100 - plagiarismRate + selfcitationRate;
     if (selfcitationRate > plagiarismRate)
         throw std::invalid_argument("Объём самоцитирования превышает процент плагиата.");

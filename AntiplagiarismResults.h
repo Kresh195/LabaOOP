@@ -37,7 +37,7 @@ public:
 
     ~AntiplagiarismResults();
 
-    WorkType getWorktype() const; //все get должны быть const
+    WorkType getWorktype() const;
 
     int getPageCount() const;
 
