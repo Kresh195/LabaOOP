@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #define AntiplagiarismResults_h
 
@@ -9,14 +10,7 @@ enum WorkType {
 
 class AntiplagiarismResults {
 private:
-    const char* name;
-    const char* title;
     WorkType workType;
-    int pageCount;
-    double plagiarismRate;
-    double selfcitationRate;
-    const int passCheckPercent = 70;
-    bool result = false;
     enum pagesValues {
         GQW_minPages = 60,
         GQW_maxPages = 100,
@@ -26,6 +20,15 @@ private:
         labReport_maxPages = 50,
         practiceReport_minPages = 20
     };
+
+protected:
+    const char* name;
+    const char* title;
+    int pageCount;
+    double plagiarismRate;
+    double selfcitationRate;
+    const int passCheckPercent = 70;
+    bool result = false;
 
 public:
     AntiplagiarismResults(const char* name, const char* title, WorkType workType, int pageCount);
